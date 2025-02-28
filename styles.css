@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --dark: #1F1B21;
+    --middle: #312C33;
+    --light: #FFEAEE;
+    --primary: #725AC1;
+    --secondary: #8D86C9;
+}
+
+body{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-size: 12px;
+}
+
+.section{
+    padding: 20px;
+}
+
+.split {
+    display: flex;
+}
+
+.section-element{
+    padding: 20px;
+    flex: 1;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 32px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.box{
+    background-color: var(--primary);
+    color: white;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+#header {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+#section1 {
+    background-color: var(--middle);
+    color: var(--light);
+}
+
+#section2 {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+#section3 {
+    background-color: var(--middle);
+    color: var(--light);
+}
+
+#section4 {
+    background-color: var(--light);
+    color: var(--dark);
+}
