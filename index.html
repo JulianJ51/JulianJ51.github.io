@@ -1,86 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Julian Jordan</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="section" id="header">
-        Header
-    </div>
 
-    <div class="split section" id="section1">
-        <h1 class="section-element">Hi, I'm Keene.</h1>
-        <div class="section-element">picture</div>
-    </div>
+    <main>
+    <header>
+        <div class="container">
+            <h1>Julian Jordan</h1>
+            <img src="Images/PFP.jpg" alt="Profile Picture of Julian Jordan" class="pfp">
+        </div>
+    </header>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About</h2>
+            <div class=about-content>
+                <div class="about-text">
+                    <p>
+                        My name is Julian, I am a senior at Florida State University
+                        pursuing a Bachelors of Science in Computer Science and Applied Mathematics.
+                        Starting in Fall of 2025, I will be pursuing a Masters of Engineering
+                        in Computer Engineering at the University of Cincinnati, where I plan
+                        to further my education in developing embedded systems, computer 
+                        architecture, and machine learning.
+                    </p>
+                </div>
 
-    <div class="split section" id="section2">
-        <div class="section-element">
-            <div class="title">Skills</div>
-            <div class="grid">
-                <div class="box">skill 1</div>
-                <div class="box">skill 2</div>
-                <div class="box">skill 3</div>
-                <div class="box">skill 4</div>
             </div>
         </div>
-        <div class="section-element">
-            <div class="title">About</div>
-            <p>This is a little information about me.</p>
-        </div>
-    </div>
 
-    <div class="section" id="section3">
-        <div class="title">Projects</div>
-        <div class="split section">
-            <div class="section-element">
-                <div class="box">
-                    <div class="title">Project 1</div>
-                    <img src="project1.png" alt="Picture of project 1">
-                    <p>This project is about something really cool.</p>
-                    <a href="https://www.google.com">Link to project 1</a>
+    </section>
+
+    <section id="work_exp" class="work-exp">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <div class="work_exp-content">
+                <div class="work_exp-text">
+                    <p>
+                        Listed below is my past and current work experience:
+                    </p>
+                    <ul>
+                        <li><Strong>Head Lifeguard for the City of Tallahassee:</Strong> I lead a team of up to 13 lifeguards to ensure the facility operates safely and programs and operations function as expected</li>
+                        <li><Strong>Mentor for Women in Computer Science at FSU:</Strong> I mentor undergraduate Computer Science students through peer to peer connection and development and presentation of technical workshops</li>
+                    </ul>
+                    <p>
+                        My current and past projects are detailed below
+                    </p>
                 </div>
             </div>
-            <div class="section-element">
-                <div class="box">
-                    <div class="title">Project 2</div>
-                    <img src="project2.png" alt="Picture of project 2">
-                    <p>This project is about something really really cool.</p>
-                    <a href="https://www.google.com">Link to project 2</a>
+
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <div class="projects-info" id="EnKF">
+                    <h3 class="project-title">Ensemble Kalman Filter</h3>
+                    <p class="project-timeframe">October 2024 - Present</p>
+                    <p class="project-description">
+                        Through the Directed Reading Program at the Math Department at FSU
+                        I am studying the ensemble kalman filter, an advanced data assimilation
+                        algorithm. The ensemble kalman filter is an iterative algorithm that 
+                        aims to predict the state of some system given observations. As the system
+                        advances in time, the model gives less weight to new observations overcoming
+                        noise.
+                    </p>
+                    <p class="project-subheading">
+                        <strong>Skills Involved</strong>
+                    </p>
+                    <ul>
+                        <li><strong>Python Programming: </strong>Utilized python to program algorithms and visualize data assimilation results.</li>
+                        <li><strong>Mathematical Applications: </strong>Applied advanced math concepts from the fields of linear algebra, statistics, and differential equations to understand and apply Kalman Filter algorithms.</li>
+                        <li><strong>Literature Review: </strong>Dissected mathematical research papers to understand Kalman Filter algorithms and contemporary applications.</li>
+                    </ul>
+                    <p class="project-subheading">
+                        <strong>Progress</strong>
+                    </p>
+                    <ul>
+                        <li>Completed programming the Kalman Filter (an older slightly simpler algorithm) in python based on a pendulum system with synthetic observations.</li>
+                        <li>Completed literature review of the Ensemble Kalman Filter to gain understanding of the algorithm.</li>
+                    </ul>
+                    <p class="project-subheading">
+                        <strong>Current Goals</strong>     
+                   </p>
+                   <ul>
+                    <li>Programming the full Ensemble Kalman Filter algorithm in python.</li>
+                    <li>Apply the Ensemble Kalman Filter to relevant atmospheric data to make predictions.</li>
+                    <li>Present findings at an FSU graduate poster session in April.</li>
+                   </ul>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-info" id="GAMEIQ">
+                    <h3 class="project-title">GAMEIQ</h3>
+                    <p class="project-timeframe">January 2025 - Present</p>
+                    <p class="project-description">
+                        Developed with the Seminole Innovators at FSU, GAMEIQ is an application
+                        that utilizes a machine learning model to project the best next play of a football game
+                        in real time.
+                    </p>
+                    <p class="project-subheading">
+                        <strong>Skills Involved</strong>
+                    </p>
+                    <ul>
+                        <li><strong>Machine Learning: </strong>Developed a machine learning model in Tensorflow which learned from years of play by play data.</li>
+                        <li><strong>Programming: </strong>Programmed the model and application backend in Python</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-info" id="Chess Rougelite">
+                    <h3 class="project-title">Chess Rougelite</h3>
+                    <p class="project-timeframe">January 2025 - Present</p>
+                    <p class="project-description">
+                        Developed as a senior capstone project, Chess Rougelite is a single player game where players must 
+                        face a series of chess AI in increasing difficulty. Between matches, 
+                        players have the opportunity to give themselves advantages against future opponents
+                        that even world class chess players might not be able to defeat.
+                    </p>
+                    <p class="project-subheading">
+                        <strong>Skills Involved</strong>
+                    </p>
+                    <ul>
+                        <li><strong>Programming: </strong>Programmed in python utilizing the gamepy library.</li>
+                        <li><strong>Object Oriented Design: </strong>Utilized a class structure to program the chess engine.</li>
+                        <li><strong>Machine Learning: </strong>Utilized machine learning algorithms to develop chess bots.</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="split section" id="section4">
-        <div class="section-element">
-            <div class="title">Work Experience</div>
-            <div>
-                <div class="subtitle">Position 1</div>
-                <p>Dec. 2024 - Feb. 2025</p>
-                <p>Description of position</p>
-            </div>
-            <div>
-                <div class="subtitle">Position 2</div>
-                <p>Dec. 2024 - Feb. 2025</p>
-                <p>Description of position</p>
-            </div>
-            <div>
-                <div class="subtitle">Position 3</div>
-                <p>Dec. 2024 - Feb. 2025</p>
-                <p>Description of position</p>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Information</h2>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <p>
+                        contact information here
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="section-element">
-            <div class="title">Technologies</div>
-            <div class="grid">
-                <div class="box">HTML</div>
-                <div class="box">CSS</div>
-            </div>
-        </div>
-    </div>
-
+    </section>
+    </main>
+    <footer>
+        
+    </footer>
 </body>
 </html>
